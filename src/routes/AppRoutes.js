@@ -1,13 +1,13 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
-import Thought from '../components/thought_comps/Thought';
+import ThoughtContainer from '../components/thought_comps/ThoughtContainer';
 
 
 function AppRoutes(props) {
     return (
         <Routes>            
-            <Route exact path='/'  element={<Thought />} /> 
+            <Route exact path='/'  element={<ThoughtContainer />} /> 
         </Routes>            
     );
 }

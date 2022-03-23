@@ -6,3 +6,4 @@ const API_URL = BASE_URL + "/api/v1";
 
 export { API_URL };
 
+// TEMP: import { API_URL } from "./api/api_connection"

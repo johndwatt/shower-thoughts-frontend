@@ -29,7 +29,7 @@ function Home(props) {
             });
     }, []);
 
-    const handleRandRefresh = async (e) => {
+    const handleRefreshRand = async (e) => {
         e.preventDefault();
 
         setRandThought(null);
@@ -37,6 +37,19 @@ function Home(props) {
         await axios.get(randUrl)
             .then(response => {
                 setRandThought(response.data.randomThought[0]);
+            }).catch(error => {
+                console.log(error);
+            });
+    };
+
+    const handleRefreshLatest = async (e) => {
+        e.preventDefault();
+
+        setLatestThought(null);
+
+        await axios.get(latestUrl)
+            .then(response => {
+                setLatestThought(response.data.recentThought[0]);
             }).catch(error => {
                 console.log(error);
             });
@@ -54,11 +67,16 @@ function Home(props) {
                 ) : (
                     <h3 className='loading'>Loading...</h3>
                 )}
-                <button onClick={handleRandRefresh}>Randomize!</button>
+                <button onClick={handleRefreshRand}>Randomize!</button>
             </div>
             <div className='latest-thought'>
                 <h3>Latest Shower Thought</h3>
-                <Thought key={latestThought._id} thought={latestThought} />
+                {latestThought !== null ? (
+                    <Thought key={latestThought._id} thought={latestThought} />
+                ) : (
+                    <h3 className='loading'>Loading...</h3>
+                )}
+                <button onClick={handleRefreshLatest}>Get Latest Thought!</button>
             </div>
         </div>
 

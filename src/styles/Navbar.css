@@ -1,0 +1,27 @@
+.navbar {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar-home {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}

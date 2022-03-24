@@ -1,13 +1,14 @@
 import React from 'react';
 import { API_URL } from "../api/api_connection"
-import axios from 'axios';
+// import axios from 'axios';
 
 import "../styles/ThoughtContainer.css"
 
-const url = API_URL + '/home'
+// const url = API_URL + '/home'
 
 function Home(props) {
 
+    // need to add queries for random and latest thought and have those display below
 
     return (
         <div className='home-container'>

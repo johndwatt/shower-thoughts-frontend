@@ -1,13 +1,12 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
-import ThoughtContainer from '../components/thought_comps/ThoughtContainer';
-
+import Dashboard from '../pages/Dashboard';
 
 function AppRoutes(props) {
     return (
         <Routes>            
-            <Route exact path='/'  element={<ThoughtContainer />} /> 
+            <Route exact path='/dashboard'  element={<Dashboard />} /> 
         </Routes>            
     );
 }

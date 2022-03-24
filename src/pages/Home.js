@@ -8,13 +8,22 @@ const url = API_URL + '/home'
 
 function Home(props) {
     const [randThought, setRandThought] = useState({});
+    const [latestThought, setLatestThought] = useState({});
 
     const randUrl = url + "/random"
+    const latestUrl = url + "/latest"
 
     useEffect(() => {
         axios.get(randUrl)
             .then(response => {
                 setRandThought(response.data.randomThought[0]);
+            }).catch(error => {
+                console.log(error);
+            });
+
+        axios.get(latestUrl)
+            .then(response => {
+                setLatestThought(response.data.recentThought[0]);
             }).catch(error => {
                 console.log(error);
             });
@@ -30,7 +39,8 @@ function Home(props) {
                 <Thought key={randThought._id} thought={randThought} />
             </div>
             <div className='latest-thought'>
-                <p>Latest thought goes here</p>
+                <h3>Latest Shower Thought</h3>
+                <Thought key={latestThought._id} thought={latestThought} />
             </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import "../../styles/Thought.css"
 
@@ -8,6 +9,9 @@ function Thought(props) {
             <p className="thought-content">{props.thought.content}</p>
             <div className='thought-flex'>
                 <p className="thought-thinker">{props.thought.thinker}</p>
+                <div className="thought-buttons">
+                    <Link to={{pathname: `/dashboard/${props.thought._id}/edit`}}>Edit</Link> 
+                </div>
             </div>
         </div>
     );

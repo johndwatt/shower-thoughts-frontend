@@ -1,0 +1,7 @@
+.thought-container {
+    display: grid;
+    background-color: gray;
+    margin: 15px;
+    border: 3px solid gray;
+    border-radius: 30px;
+}

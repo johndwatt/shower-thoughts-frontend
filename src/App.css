@@ -2,3 +2,23 @@
   margin: 0px;
   padding: 0px;
 }
+
+.loading {
+	transform: scale(1);
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
+        transform: scale(1);
+	}
+	50% {
+		opacity: 0.6;
+        transform: scale(0.998);
+	}
+	100% {
+		opacity: 1;
+        transform: scale(1);
+	}
+}

@@ -1,0 +1,19 @@
+.thought {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 35px;
+    background: chartreuse;
+    border: 3px solid green;
+    border-radius: 25px;
+}
+
+.thought-content {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.thought-flex {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+.form-container {
+    background-color: aqua;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lime;
+    border-radius: 35px;
+}

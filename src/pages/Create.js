@@ -43,7 +43,7 @@ function Create(props) {
 
     return (
         <div className='form-container'>
-            <h2>Create New Quote</h2>
+            <h2>Create New Shower Thought</h2>
             <form onSubmit={handleSubmit} className='form' >
                 <div className='input-container'>
                     <label>Thought: </label>

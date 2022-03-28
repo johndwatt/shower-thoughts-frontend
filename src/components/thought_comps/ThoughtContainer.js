@@ -25,10 +25,18 @@ function ThoughtContainer(props) {
         setLoading(false);
     }, []);
 
+    /**
+     * Sets search query to value of search input on dashboard page.
+     * @param {Object} e Event Object.
+     */
     const handleSearchInput = (e) => {
         setSearch(e.target.value)
     }
 
+    /**
+     * Clears search state/input and sends Axios request to reload shower thoughts on dashboard page.
+     * @param {Object} e Event Object.
+     */
     const handleClearSearch = async (e) => {
         e.preventDefault();
 
@@ -44,7 +52,11 @@ function ThoughtContainer(props) {
 
         setLoading(false);
     }
-        
+    
+    /**
+     * Sends Axios request with search query and loads returned shower thoughts on dashbaord page.
+     * @param {Object} e Event object.
+     */
     const handleSearch = async (e) => {
         e.preventDefault();
 

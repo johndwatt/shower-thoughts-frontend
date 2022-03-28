@@ -7,6 +7,11 @@ import Create from '../pages/Create';
 import Edit from '../pages/Edit';
 import Delete from '../pages/Delete';
 
+/**
+ * Returns all defined routes for links throughout application.
+ * @param {Object} props React props object. 
+ * @returns Routes JSX for react-router-dom links.
+ */
 function AppRoutes(props) {
     return (
         <Routes>

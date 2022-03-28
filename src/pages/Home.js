@@ -37,6 +37,10 @@ function Home(props) {
         setLoadingLate(false);
     }, []);
 
+    /**
+     * Sends Axios request to retrieve a random thought from database and sets random thought state to returned thought. 
+     * @param {Object} e Event object.
+     */
     const handleRefreshRand = async (e) => {
         e.preventDefault();
 
@@ -53,6 +57,10 @@ function Home(props) {
         setLoadingRand(false);
     };
 
+    /**
+     * Sends Axios request to retrieve the latest thought from database and sets latest thought state to returned thought. 
+     * @param {Object} e Event object.
+     */
     const handleRefreshLatest = async (e) => {
         e.preventDefault();
 

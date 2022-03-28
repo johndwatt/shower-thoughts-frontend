@@ -9,8 +9,8 @@ const url = API_URL + '/home'
 function Home(props) {
     const [randThought, setRandThought] = useState({});
     const [latestThought, setLatestThought] = useState({});
-    const [loadingRand, setLoadingRand] = useState(true);
-    const [loadingLate, setLoadingLate] = useState(true);
+    const [loadingRand, setLoadingRand] = useState(false);
+    const [loadingLate, setLoadingLate] = useState(false);
 
     const randUrl = url + "/random"
     const latestUrl = url + "/latest"

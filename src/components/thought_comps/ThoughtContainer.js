@@ -10,7 +10,7 @@ const url = API_URL + '/thoughts'
 function ThoughtContainer(props) {
     const [thoughts, setThoughts] = useState([]);
     const [search, setSearch] = useState("");
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     useEffect(async () => {
         setLoading(true);

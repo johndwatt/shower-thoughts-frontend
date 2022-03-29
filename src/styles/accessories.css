@@ -1,0 +1,28 @@
+:root {
+    /* Colors:
+    - Tan: #f9f1e6
+    - Dark tan: #EDD5B9
+    - Purple-grey: #C0BBC4
+    - soft-black: #0E1221
+    - red-purple-tan: #CFB4AE
+    - dark grey: #5B5764
+    - red-sand orange: #C67654
+    */
+    --tan: #f9f1e6;
+    --Dark-tan: #EDD5B9;
+    --purple-grey: #C0BBC4;
+    --soft-black: #0E1221;
+    --red-purple-tan: #CFB4AE;
+    --dark-grey: #5B5764;
+    --red-sand-orange: #C67654;
+
+    /* 
+    --primary: #f9f1e6;
+    --secondary: #EDD5B9;
+    --background-color: #C0BBC4;
+    --font-color: #0E1221; 
+    */
+
+    /* Fonts */
+
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import "../../styles/Thought.css"
+import "../../styles/components/Thought.css"
 
 function Thought(props) {
     return (

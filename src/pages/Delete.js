@@ -3,8 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { API_URL } from "../api/api_connection"
 import axios from 'axios';
 
-import "../styles/Form.css"
-import "../styles/Thought.css"
+import "../styles/components/Form.css"
+import "../styles/components/Thought.css"
 
 const url = API_URL + "/thoughts"
 

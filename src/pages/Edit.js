@@ -27,18 +27,35 @@ function Edit(props) {
             });
     }, []);
 
+    /**
+     * Updates shower thought Content state on change.
+     * @param {Object} e Event object.
+     */
     const handleChangeContent = (e) => {
         setContent(e.target.value);
     }
+
+    /**
+     * Updates shower thought Thinker state on change.
+     * @param {Object} e Event object.
+     */
     const handleChangeThinker = (e) => {
         setThinker(e.target.value);
     }
 
+    /**
+     * Updates shower thought NSFW state on change.
+     * @param {Object} e Event object.
+     */
     const handleChangeNsfw = (e) => {
         const value = e.target.name === 'nsfw' ? e.target.checked : e.target.value
         setNsfw(value);
     }
 
+    /**
+     * Handles form submission for updating selected shower thought. Sends Axios request with updated shower thought object. 
+     * @param {Object} e Event object.
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
         

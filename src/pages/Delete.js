@@ -24,6 +24,10 @@ function Delete(props) {
             });
     }, []);
 
+    /**
+     * Handles form submission for deletion of selected shower thought. Sends Axios delete request. 
+     * @param {Object} e Event object.
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
 

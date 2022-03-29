@@ -11,18 +11,35 @@ function Create(props) {
     const [thinker, setThinker] = useState("");
     const [nsfw, setNsfw] = useState(false);
 
+    /**
+     * Sets shower thought Content state on change.
+     * @param {Object} e Event object.
+     */
     const handleChangeContent = (e) => {
         setContent(e.target.value);
     }
+
+    /**
+     * Sets shower thought Thinker state on change.
+     * @param {Object} e Event object.
+     */
     const handleChangeThinker = (e) => {
         setThinker(e.target.value);
     }
 
+    /**
+     * Sets shower thought NSFW state on change.
+     * @param {Object} e Event object.
+     */
     const handleChangeNsfw = (e) => {
         const value = e.target.name === 'nsfw' ? e.target.checked : e.target.value
         setNsfw(value);
     }
 
+    /**
+     * Handles form submission for creation of new shower thought. Sends Axios request with new shower thought object. 
+     * @param {Object} e Event object.
+     */
     const handleSubmit = (e) => {
         e.preventDefault();
         

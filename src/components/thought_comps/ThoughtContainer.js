@@ -10,42 +10,66 @@ const url = API_URL + '/thoughts'
 function ThoughtContainer(props) {
     const [thoughts, setThoughts] = useState([]);
     const [search, setSearch] = useState("");
+    const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        axios.get(url)
+    useEffect(async () => {
+        setLoading(true);
+
+        await axios.get(url)
             .then(response => {
                 setThoughts(response.data.thoughts);
             }).catch(error => {
                 console.log(error);
             });
+        
+        setLoading(false);
     }, []);
 
+    /**
+     * Sets search query to value of search input on dashboard page.
+     * @param {Object} e Event Object.
+     */
     const handleSearchInput = (e) => {
         setSearch(e.target.value)
     }
 
-    const handleClearSearch = (e) => {
+    /**
+     * Clears search state/input and sends Axios request to reload shower thoughts on dashboard page.
+     * @param {Object} e Event Object.
+     */
+    const handleClearSearch = async (e) => {
         e.preventDefault();
 
         setSearch("")
+        setLoading(true);
 
-        axios.get(url)
+        await axios.get(url)
             .then(response => {
                 setThoughts(response.data.thoughts);
             }).catch(error => {
                 console.log(error);
             });
+
+        setLoading(false);
     }
-        
+    
+    /**
+     * Sends Axios request with search query and loads returned shower thoughts on dashbaord page.
+     * @param {Object} e Event object.
+     */
     const handleSearch = async (e) => {
         e.preventDefault();
 
-        axios.get(url + "?search=" + search)
+        setLoading(true);
+
+        await axios.get(url + "?search=" + search)
         .then(response => {
             setThoughts(response.data.thoughts);
         }).catch(error => {
             console.log(error);
         });
+        
+        setLoading(false);
     }
 
 
@@ -70,15 +94,20 @@ function ThoughtContainer(props) {
                     </button>
                 </form>
             </div>
-            <div className='thought-container-display'>
-                {thoughts.length > 0 ? (
-                    thoughts.map(thought => ( 
-                        <Thought key={thought._id} thought={thought} />
-                    ))
+            <div className='thought-container-load'>
+                { loading ? (
+                    <h3 className='loading'>Loading...</h3>
                 ) : (
-                    <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
-                    // ISSUE: What to do about loading?
-                )}
+                    <div className='thought-container-display'>
+                        { thoughts.length > 0 ? (
+                            thoughts.map(thought => ( 
+                                <Thought key={thought._id} thought={thought} />
+                            ))
+                        ) : (
+                            <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
+                        )}
+                    </div>
+                )}    
             </div>
         </div>
 

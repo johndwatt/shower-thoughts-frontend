@@ -1,6 +1,13 @@
+@import url(/src/styles/accessories.css);
+
 * {
   margin: 0px;
   padding: 0px;
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--font-color);
 }
 
 .loading {

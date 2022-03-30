@@ -1,15 +1,17 @@
+@import url(../accessories.css);
+
 .thought {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 35px;
-    background: chartreuse;
-    border: 3px solid green;
+    background: var(--primary);
+    border: 3px solid var(--primary);
     border-radius: 25px;
+    padding: 25px;
+    margin: 15px 0;
 }
 
 .thought-content {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     font-weight: bold;
 }
 

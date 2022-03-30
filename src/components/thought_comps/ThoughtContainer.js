@@ -3,7 +3,7 @@ import { API_URL } from "../../api/api_connection"
 import axios from 'axios';
 import Thought from './Thought';
 
-import "../../styles/ThoughtContainer.css"
+import "../../styles/components/ThoughtContainer.css"
 
 const url = API_URL + '/thoughts'
 

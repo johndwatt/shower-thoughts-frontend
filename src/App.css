@@ -10,6 +10,22 @@ body {
 	color: var(--font-color);
 }
 
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+	width: 12px;
+}
+  
+::-webkit-scrollbar-track {
+	background: var(--background-color);
+}
+  
+::-webkit-scrollbar-thumb {
+	background: var(--primary);
+	border-radius: 15px;
+	border: 3px solid var(--background-color);
+}
+
+
 .loading {
 	transform: scale(1);
 	animation: pulse 1s infinite;

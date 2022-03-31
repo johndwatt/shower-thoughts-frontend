@@ -1,19 +1,24 @@
-
+@import url(../accessories.css);
 
 .navbar {
-    background: black;
+    background: var(--primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--font-color);
+    padding: 10px;
 }
 
 .navbar-home {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
     font-size: large;
+}
+
+.navbar-home:hover {
+    color: white;
 }
 
 .navbar-items {
@@ -23,7 +28,11 @@
 }
 
 .navbar-item {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     padding: 10px;
+}
+
+.navbar-item:hover {
+    color: white;
 }

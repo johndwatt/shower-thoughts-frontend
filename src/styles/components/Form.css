@@ -1,11 +1,28 @@
-.form-container {
-    background-color: aqua;
-}
+@import url(../accessories.css);
 
 .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--success);
+    border-radius: 35px;
+    font-size: medium;
+}
+
+.form-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--danger);
+    color: var(--font-color);
+    font-size: medium;
+    border-radius: 35px;
 }
 
 .input-container {
@@ -14,10 +31,9 @@
     margin: 10px 5px;
 }
 
-.form-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lime;
-    border-radius: 35px;
+.input-container input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
 }

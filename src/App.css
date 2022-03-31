@@ -10,6 +10,29 @@ body {
 	color: var(--font-color);
 }
 
+h1, h2 {
+	text-align: center;
+    margin: 15px;
+}
+
+.btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.button {
+	padding: 10px;
+    border: solid 2px #F1EEFF;
+    border-radius: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+	text-decoration: none;
+}
+
 /* === SCROLLBAR === */
 ::-webkit-scrollbar {
 	width: 12px;

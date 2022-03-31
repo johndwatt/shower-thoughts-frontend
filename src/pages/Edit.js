@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { API_URL } from "../api/api_connection"
 import axios from 'axios';
 
@@ -109,10 +109,18 @@ function Edit(props) {
                         checked={nsfw}
                         onChange={handleChangeNsfw} />
                 </div>
-                <input
-                    type='submit'
-                    className='form-submit'
-                    value='Edit Thought'/>
+                <div className='btns'>
+                    <input
+                        type='submit'
+                        className='form-submit button'
+                        value='Edit Thought'/>
+                    <Link 
+                        to="/dashboard" 
+                        className='form-cancel button'>
+                        Cancel
+                    </Link>
+                </div>
+
             </form>
         </div>
 

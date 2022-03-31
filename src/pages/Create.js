@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { API_URL } from "../api/api_connection"
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 import "../styles/components/Form.css"
@@ -93,10 +94,18 @@ function Create(props) {
                         checked={nsfw}
                         onChange={handleChangeNsfw} />
                 </div>
-                <input
-                    type='submit'
-                    className='form-submit'
-                    value='Add Thought'/>
+                <div className='btns'>
+                    <input
+                        type='submit'
+                        className='form-submit button'
+                        value='Add Thought'/>
+                    <Link 
+                        to="/dashboard" 
+                        className='form-cancel button'>
+                        Cancel
+                    </Link>
+                </div>
+
             </form>
         </div>
 

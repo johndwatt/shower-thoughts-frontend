@@ -1,4 +1,50 @@
+@import url(../accessories.css);
+
 .thought-container {
     display: grid;
-    border-radius: 30px;
+}
+
+.thought-container-search > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.thought-container-search > form > input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    margin-bottom: 10px;
+}
+
+.thought-container-search > form > input:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+  }
+
+.thought-container-search-btns > button {
+    padding: 10px;
+    border: solid 2px #F1EEFF;
+    border-radius: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.thought-container-search-btns > button:hover {
+    color: #132F64;
+    border-color: #132F64;
+    background-color: #BFC1D9;
+}
+
+.thought-container-search-button {
+    background-color: var(--info);
+}
+
+.thought-container-clear-button {
+    background-color: var(--warning);
 }

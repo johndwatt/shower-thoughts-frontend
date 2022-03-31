@@ -9,7 +9,6 @@ function Dashboard(props){
         <main className='dashboard'>
             <h1 className='dashboard-title'>Shower Thoughts Dashboard</h1>            
             <ThoughtContainer />
-
         </main>
     )
 }

@@ -1,7 +1,9 @@
 :root {
-    /* Colors:*/
-    --primary: #EFE9F5;
-    --background-color: #C0BBC4;
+    /* Colors:
+    
+    #C0BBC4*/
+    --primary: #BFC1D9;
+    --background-color: #EFE9F5;
     --dark-font-color: #0E1221;
     --light-font-color: #f9f1e6;
     --danger: #C74B4A;

@@ -83,15 +83,20 @@ function ThoughtContainer(props) {
                         value={search}
                         onChange={handleSearchInput}
                         placeholder="Search" />
-                    <button 
-                        type="submit" 
-                        onClick={handleSearch}>
-                        Search
-                    </button>
-                    <button 
-                        onClick={handleClearSearch}>
-                        Clear
-                    </button>
+                    <div className='thought-container-search-btns'>
+                        <button 
+                            type="submit" 
+                            className='thought-container-search-button'
+                            onClick={handleSearch}>
+                            Search
+                        </button>
+                        <button
+                            className='thought-container-clear-button'
+                            onClick={handleClearSearch}>
+                            Clear
+                        </button>
+                    </div>
+
                 </form>
             </div>
             <div className='thought-container-load'>

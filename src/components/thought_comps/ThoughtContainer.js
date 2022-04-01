@@ -109,7 +109,10 @@ function ThoughtContainer(props) {
                                 <Thought key={thought._id} thought={thought} />
                             ))
                         ) : (
-                            <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
+                            <div className='no-thoughts'>
+                                <h3>No thoughts found!</h3>
+                                <p>Click "Add Thought" to create a shower thought.</p>
+                            </div>
                         )}
                     </div>
                 )}    

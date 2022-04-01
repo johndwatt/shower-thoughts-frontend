@@ -9,8 +9,8 @@ import '../styles/pages/Home.css'
 const url = API_URL + '/home'
 
 function Home(props) {
-    const [randThought, setRandThought] = useState({});
-    const [latestThought, setLatestThought] = useState({});
+    const [randThought, setRandThought] = useState(null);
+    const [latestThought, setLatestThought] = useState(null);
     const [loadingRand, setLoadingRand] = useState(false);
     const [loadingLate, setLoadingLate] = useState(false);
 
@@ -94,7 +94,10 @@ function Home(props) {
                         { randThought !== null ? (
                             <Thought key={randThought._id} thought={randThought} />
                         ) : (
-                            <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
+                            <div className='no-thoughts'>
+                                <h3>No thoughts found!</h3>
+                                <p>Click "Add Thought" to create a shower thought.</p>
+                            </div>
                         )}
                         <button className="button home-thought-btn" onClick={handleRefreshRand}>Randomize!</button>
                     </div>
@@ -109,7 +112,10 @@ function Home(props) {
                         { latestThought !== null ? (
                             <Thought key={latestThought._id} thought={latestThought} />
                         ) : (
-                            <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
+                            <div className='no-thoughts'>
+                                <h3>No thoughts found!</h3>
+                                <p>Click "Add Thought" to create a shower thought.</p>
+                            </div>
                         )}
                         <button className="button home-thought-btn" onClick={handleRefreshLatest}>Get Latest Thought!</button>
                     </div>

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { API_URL } from "../../api/api_connection"
 import axios from 'axios';
+
 import Thought from './Thought';
+import Loading from './Loading';
 
 import "../../styles/components/ThoughtContainer.css"
 
@@ -101,7 +103,7 @@ function ThoughtContainer(props) {
             </div>
             <div className='thought-container-load'>
                 { loading ? (
-                    <h3 className='loading'>Loading...</h3>
+                    <Loading />
                 ) : (
                     <div className='thought-container-display'>
                         { thoughts.length > 0 ? (

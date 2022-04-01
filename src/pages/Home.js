@@ -3,6 +3,7 @@ import { API_URL } from "../api/api_connection"
 import axios from 'axios';
 
 import Thought from '../components/thought_comps/Thought';
+import Loading from '../components/thought_comps/Loading';
 
 import '../styles/pages/Home.css'
 
@@ -88,7 +89,7 @@ function Home(props) {
             <div>
                 <h3 className='section-heading'>Random Shower Thought</h3>
                 { loadingRand ? (
-                    <h3 className='loading'>Loading...</h3>
+                    <Loading />
                 ) : (
                     <div className='home-thought-display'>
                         { randThought !== null ? (
@@ -106,7 +107,7 @@ function Home(props) {
             <div>
                 <h3 className='section-heading'>Latest Shower Thought</h3>
                 { loadingLate ? (
-                    <h3 className='loading'>Loading...</h3>
+                    <Loading />
                 ) : (
                     <div className='home-thought-display'>
                         { latestThought !== null ? (

@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+.form-alt-flex {
+    display: flex;
+    justify-content: center;
+}
+
 .form-submit {
     display: flex;
     justify-content: center;

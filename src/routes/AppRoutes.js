@@ -6,6 +6,7 @@ import Dashboard from '../pages/Dashboard';
 import Create from '../pages/Create';
 import Edit from '../pages/Edit';
 import Delete from '../pages/Delete';
+import NotFound from '../pages/NotFound';
 
 /**
  * Returns all defined routes for links throughout application.
@@ -20,6 +21,7 @@ function AppRoutes(props) {
             <Route exact path='/dashboard/add' element={<Create />} />
             <Route path='/dashboard/:id/edit' element={<Edit />} />
             <Route path='/dashboard/:id/delete' element={<Delete />} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
     );
 }

@@ -36,6 +36,22 @@ h1, h2 {
 }
 
 
+/* === IMAGES === */
+div.image-container {
+	max-height: 300px;
+	min-height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+div.image-container img.image {
+	width: 100%;
+	min-height: 200px;
+}
+
+
 /* === SCROLLBAR === */
 ::-webkit-scrollbar {
 	width: 12px;

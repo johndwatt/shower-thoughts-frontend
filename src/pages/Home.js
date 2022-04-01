@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import Thought from '../components/thought_comps/Thought';
 import Loading from '../components/thought_comps/Loading';
+import ShowerImg from '../images/shower-head.jpg'
 
 import '../styles/pages/Home.css'
 
@@ -82,6 +83,9 @@ function Home(props) {
 
     return (
         <div className='home-container'>
+            <div className='image-container'>
+                <img src={ShowerImg} alt="Shower Dropplets" className='image'/>
+            </div>
             <h1>Welcome to Shower Thought Central</h1>
             <h3 className='subheading'>A place to share your shower thoughts.</h3>
             <h3 className='section-heading'>About Shower Thought Central:</h3>

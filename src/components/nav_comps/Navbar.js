@@ -9,7 +9,7 @@ function Navbar(props) {
             <Link to='/' className='navbar-home'>STCentral</Link>        
             <ul className='navbar-items'>
                 <Link to='/dashboard' className='navbar-item'>Dashboard</Link>
-                <Link to='/dashboard/add' className='navbar-item'>Add Thought</Link>
+                <Link to='/dashboard/add' className='navbar-item'>Add</Link>
             </ul>          
         </nav>
     );

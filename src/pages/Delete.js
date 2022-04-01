@@ -49,12 +49,12 @@ function Delete(props) {
                     <p className="thought-thinker">{thought.thinker}</p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="form-alt-flex">
                 <input
                     type='submit'
-                    className='delete-submit'
+                    className='button form-cancel'
                     value='Delete Thought'/>
-                <Link to="/dashboard" className='delete-cancel'>Cancel</Link>
+                <Link to="/dashboard" className='button form-cancel'>Cancel</Link>
             </form>
             
         </div>

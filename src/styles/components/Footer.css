@@ -1,17 +1,24 @@
+@import url(../accessories.css);
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    padding: 10px;
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    display: relative;
 }
 
 .footer-content {
-    color: white;
-    
+    color: var(--font-color);
 }
 
 .footer-link {
     text-decoration: none;
+    color: var(--font-color);
+}
+
+.footer-link:hover {
     color: white;
 }

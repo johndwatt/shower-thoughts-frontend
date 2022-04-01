@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { API_URL } from "../../api/api_connection"
 import axios from 'axios';
+
 import Thought from './Thought';
+import Loading from './Loading';
 
 import "../../styles/components/ThoughtContainer.css"
 
@@ -83,20 +85,25 @@ function ThoughtContainer(props) {
                         value={search}
                         onChange={handleSearchInput}
                         placeholder="Search" />
-                    <button 
-                        type="submit" 
-                        onClick={handleSearch}>
-                        Search
-                    </button>
-                    <button 
-                        onClick={handleClearSearch}>
-                        Clear
-                    </button>
+                    <div className='thought-container-search-btns'>
+                        <button 
+                            type="submit" 
+                            className='thought-container-search-button'
+                            onClick={handleSearch}>
+                            Search
+                        </button>
+                        <button
+                            className='thought-container-clear-button'
+                            onClick={handleClearSearch}>
+                            Clear
+                        </button>
+                    </div>
+
                 </form>
             </div>
             <div className='thought-container-load'>
                 { loading ? (
-                    <h3 className='loading'>Loading...</h3>
+                    <Loading />
                 ) : (
                     <div className='thought-container-display'>
                         { thoughts.length > 0 ? (
@@ -104,7 +111,10 @@ function ThoughtContainer(props) {
                                 <Thought key={thought._id} thought={thought} />
                             ))
                         ) : (
-                            <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
+                            <div className='no-thoughts'>
+                                <h3>No thoughts found!</h3>
+                                <p>Click "Add Thought" to create a shower thought.</p>
+                            </div>
                         )}
                     </div>
                 )}    

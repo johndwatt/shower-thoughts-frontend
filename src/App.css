@@ -15,6 +15,8 @@ h1, h2 {
     margin: 15px;
 }
 
+
+/* === BUTTONS === */
 .btns {
 	display: flex;
 	justify-content: center;
@@ -33,6 +35,7 @@ h1, h2 {
 	text-decoration: none;
 }
 
+
 /* === SCROLLBAR === */
 ::-webkit-scrollbar {
 	width: 12px;
@@ -49,11 +52,18 @@ h1, h2 {
 }
 
 
+/* ===MISC === */
+.hidden {
+	display: none;
+}
+
 .loading {
 	transform: scale(1);
 	animation: pulse 1s infinite;
 }
 
+
+/* === ANIMATIONS === */
 @keyframes pulse {
 	0% {
 		opacity: 1;

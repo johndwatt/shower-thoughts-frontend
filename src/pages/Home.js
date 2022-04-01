@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import Thought from '../components/thought_comps/Thought';
 
+import '../styles/pages/Home.css'
+
 const url = API_URL + '/home'
 
 function Home(props) {
@@ -80,35 +82,36 @@ function Home(props) {
     return (
         <div className='home-container'>
             <h1>Welcome to Shower Thought Central</h1>
-            <h3>A place to share your shower thoughts.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis nobis iste, provident molestiae eius aut rerum iusto iure excepturi repellendus voluptates ut minus quis architecto ratione consequuntur vel eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio debitis fuga esse iure consequatur cum quis, rem saepe corporis ipsa expedita maiores sint voluptatum tenetur officia molestias dignissimos nostrum animi.</p>
-            <div className='random-thought'>
-                <h3>Random Shower Thought</h3>
+            <h3 className='subheading'>A place to share your shower thoughts.</h3>
+            <h3 className='section-heading'>About Shower Thought Central:</h3>
+            <p className='about-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt perferendis nobis iste, provident molestiae eius aut rerum iusto iure excepturi repellendus voluptates ut minus quis architecto ratione consequuntur vel eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio debitis fuga esse iure consequatur cum quis, rem saepe corporis ipsa expedita maiores sint voluptatum tenetur officia molestias dignissimos nostrum animi.</p>
+            <div>
+                <h3 className='section-heading'>Random Shower Thought</h3>
                 { loadingRand ? (
                     <h3 className='loading'>Loading...</h3>
                 ) : (
-                    <div className='random-thought-display'>
+                    <div className='home-thought-display'>
                         { randThought !== null ? (
                             <Thought key={randThought._id} thought={randThought} />
                         ) : (
                             <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
                         )}
-                        <button onClick={handleRefreshRand}>Randomize!</button>
+                        <button className="button home-thought-btn" onClick={handleRefreshRand}>Randomize!</button>
                     </div>
                 )}
             </div>
-            <div className='latest-thought'>
-                <h3>Latest Shower Thought</h3>
+            <div>
+                <h3 className='section-heading'>Latest Shower Thought</h3>
                 { loadingLate ? (
                     <h3 className='loading'>Loading...</h3>
                 ) : (
-                    <div className='latest-thought-display'>
+                    <div className='home-thought-display'>
                         { latestThought !== null ? (
                             <Thought key={latestThought._id} thought={latestThought} />
                         ) : (
                             <h3>No thoughts found. Click "Add Thought" to create a shower thought!</h3>
                         )}
-                        <button onClick={handleRefreshLatest}>Get Latest Thought!</button>
+                        <button className="button home-thought-btn" onClick={handleRefreshLatest}>Get Latest Thought!</button>
                     </div>
                 )}
             </div>

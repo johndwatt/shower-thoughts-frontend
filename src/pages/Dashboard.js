@@ -2,8 +2,6 @@ import React from 'react';
 
 import ThoughtContainer from '../components/thought_comps/ThoughtContainer';
 
-import '../styles/pages/Dashboard.css'
-
 function Dashboard(props){
     return (
         <main className='dashboard'>

@@ -30,7 +30,7 @@
 /* Dashboard Search Buttons */
 .thought-container-search-btns > button {
     padding: 10px;
-    border: solid 2px #F1EEFF;
+    border: solid 2px var(--background-color);
     border-radius: 10px;
     margin: 0px 5px;
     cursor: pointer;
@@ -46,6 +46,7 @@
 .thought-container-search-button:hover {
     border-color: var(--info);
     background-color: var(--background-color);
+    color: var(--hover-color);
 }
 
 /* Dashboard Clear Button */
@@ -56,4 +57,5 @@
 .thought-container-clear-button:hover {
     border-color: var(--warning);
     background-color: var(--background-color);
+    color: var(--hover-color);
 }

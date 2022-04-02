@@ -13,5 +13,7 @@
    
 
     /* Fonts */
-    
+    --text-font: 'Lora', serif;
+    --heading-font: 'Nunito', sans-serif;
+    --title-font: 'Shadows Into Light', cursive;
 }

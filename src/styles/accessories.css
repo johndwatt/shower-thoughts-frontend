@@ -1,25 +1,13 @@
 :root {
-    /* Colors:
-    
-    #C0BBC4
-    #BFC1D9
-    
-    --primary: #E1E3FA;
-    --background-color: #EFE9F5;
-    --dark-font-color: #0E1221;
-    --light-font-color: #f9f1e6;
-    --danger: #C74B4A;
-    --info: #4091C7;
-    --success: #67C784#DBF5D0;
-    --warning: #C6B86A;*/
+    /* Colors: */
     --primary: #F5F5F5;
     --background-color: #EFE9F5;
-    --dark-font-color: #0E1221;
-    --light-font-color: #f9f1e6;
+    --font-color: #0E1221;
+    --hover-color: #6e738f;
     --danger: #fa9ca0;
     --info: #b8c3f9;
     --success: #a2df7c;
-    --warning: #f3f78a;
+    --warning: #f6f9b0;
    
 
     /* Fonts */

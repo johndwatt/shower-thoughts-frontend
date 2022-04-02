@@ -19,7 +19,7 @@
 }
 
 .navbar-home:hover {
-    color: white;
+    color: var(--hover-color);
 }
 
 .navbar-items {
@@ -36,5 +36,5 @@
 }
 
 .navbar-item:hover {
-    color: white;
+    color: var(--hover-color);
 }

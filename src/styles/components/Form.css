@@ -11,6 +11,7 @@
     justify-content: center;
 }
 
+/* FORM BUTTONS */
 .form-submit {
     display: flex;
     justify-content: center;
@@ -23,7 +24,7 @@
 
 .form-submit:hover {
     background-color: var(--background-color);
-    color: var(--font-color);
+    color: var(--hover-color);
     border: 2px solid var(--success);
 }
 
@@ -40,10 +41,11 @@
 
 .form-cancel:hover {
     background-color: var(--background-color);
-    color: var(--font-color);
+    color: var(--hover-color);
     border: 2px solid var(--danger);
 }
 
+/* FORM INPUTS */
 .input-container {
     display: flex;
     flex-direction: column;

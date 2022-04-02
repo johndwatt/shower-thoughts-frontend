@@ -46,6 +46,7 @@
 .thought-container-search-button:hover {
     border-color: var(--info);
     background-color: var(--background-color);
+    color: var(--hover-color);
 }
 
 /* Dashboard Clear Button */
@@ -56,4 +57,5 @@
 .thought-container-clear-button:hover {
     border-color: var(--warning);
     background-color: var(--background-color);
+    color: var(--hover-color);
 }

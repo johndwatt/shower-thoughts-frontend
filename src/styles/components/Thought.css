@@ -49,6 +49,7 @@
 .dropdown-trigger:hover {
     background-color: var(--background-color);
     border: 2px solid var(--info);
+    color: var(--hover-color);
 }
 
 .thought-btn {

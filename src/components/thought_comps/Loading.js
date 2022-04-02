@@ -8,6 +8,11 @@ function Loading(props) {
             <p className="thought-content loading">Loading...</p>
             <div className='thought-flex'>
                 <p className="thought-thinker loading">Loading...</p>
+                <div className='dropdown-container'>
+                    <button className='dropdown-trigger loading'>
+                        Loading
+                    </button>
+                </div>
             </div>
         </div>
     );

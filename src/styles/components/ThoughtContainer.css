@@ -30,7 +30,7 @@
 /* Dashboard Search Buttons */
 .thought-container-search-btns > button {
     padding: 10px;
-    border: solid 2px #F1EEFF;
+    border: solid 2px var(--background-color);
     border-radius: 10px;
     margin: 0px 5px;
     cursor: pointer;

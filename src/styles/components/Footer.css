@@ -17,6 +17,7 @@
 .footer-link {
     text-decoration: none;
     color: var(--font-color);
+    font-family: var(--heading-font);
 }
 
 .footer-link:hover {

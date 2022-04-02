@@ -23,7 +23,7 @@
 
 .form-submit:hover {
     background-color: var(--background-color);
-    color: var(--success);
+    color: var(--font-color);
     border: 2px solid var(--success);
 }
 
@@ -40,7 +40,7 @@
 
 .form-cancel:hover {
     background-color: var(--background-color);
-    color: var(--danger);
+    color: var(--font-color);
     border: 2px solid var(--danger);
 }
 

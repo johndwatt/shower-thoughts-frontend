@@ -102,13 +102,13 @@ function Home(props) {
                         <Loading />
                     ) : (
                         <div className='home-thought-display'>
-                            { randThought !== null ? (
-                                <Thought key={randThought._id} thought={randThought} />
-                            ) : (
+                            { randThought === null || randThought === undefined ? (
                                 <div className='no-thoughts'>
                                     <h3>No thoughts found!</h3>
                                     <p>Click "Add Thought" to create a shower thought.</p>
                                 </div>
+                            ) : (
+                                <Thought key={randThought._id} thought={randThought} />
                             )}
                             <button className="button home-thought-btn" onClick={handleRefreshRand}>Randomize!</button>
                         </div>
@@ -120,13 +120,13 @@ function Home(props) {
                         <Loading />
                     ) : (
                         <div className='home-thought-display'>
-                            { latestThought !== null ? (
-                                <Thought key={latestThought._id} thought={latestThought} />
-                            ) : (
+                            { latestThought === null || latestThought === undefined ? (
                                 <div className='no-thoughts'>
                                     <h3>No thoughts found!</h3>
                                     <p>Click "Add Thought" to create a shower thought.</p>
                                 </div>
+                            ) : (
+                                <Thought key={latestThought._id} thought={latestThought} />
                             )}
                             <button className="button home-thought-btn" onClick={handleRefreshLatest}>Get Latest Thought!</button>
                         </div>

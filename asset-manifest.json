@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shower-thought-central/static/css/main.0a19d55c.css",
+    "main.js": "/shower-thought-central/static/js/main.86b73d04.js",
+    "static/media/shower-head.jpg": "/shower-thought-central/static/media/shower-head.31ca53d81d15c63e72fc.jpg",
+    "index.html": "/shower-thought-central/index.html",
+    "main.0a19d55c.css.map": "/shower-thought-central/static/css/main.0a19d55c.css.map",
+    "main.86b73d04.js.map": "/shower-thought-central/static/js/main.86b73d04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a19d55c.css",
+    "static/js/main.86b73d04.js"
+  ]
+}

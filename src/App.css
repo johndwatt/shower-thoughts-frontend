@@ -133,3 +133,124 @@ div.image-container img.image {
         transform: scale(1);
 	}
 }
+
+
+/* === MEDIA QUERIES === */
+@media only screen and (min-width: 480px){
+	.thought {
+		width: 430px;
+	}
+
+	.thought-container {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.section-heading {
+		text-align: center;
+	}
+
+	.home-thought-display {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.delete-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.delete-container > div.thought {
+		justify-self: center;
+		align-self: center;
+	}
+
+	.loading-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.flex {
+		display: flex;
+		flex-direction: column;		
+	}
+
+	.about-text {
+		max-width: 700px;		
+		justify-self: center;
+		align-self: center;
+	}
+
+	.thought {
+		width: 500px;
+	}
+
+	form.form {
+		width: 750px;
+	}
+
+	.form-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	main.not-found {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 960px){
+	div.image-container {
+		max-height: 500px;
+	}
+
+	.thought-container-search > form > input {
+		width: 300px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.home-section-flex {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.about-text {
+		max-width: 900px;		
+	}
+
+	.thought-container-display {
+		display: grid;
+		grid-template-columns: 600px 600px;
+		place-items: center;
+	}
+
+	.thought-container-search > form > input {
+		width: 400px;
+	}
+}
+
+@media only screen and (min-width: 1500px){
+	.about-text {
+		max-width: 1000px;		
+	}
+
+	.thought {
+		width: 600px;
+	}
+
+	.thought-container-display {
+		display: grid;
+		grid-template-columns: 700px 700px;
+		place-items: center;
+	}
+}

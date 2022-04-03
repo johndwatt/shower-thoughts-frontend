@@ -1,7 +1,8 @@
 @import url(../accessories.css);
 
 .thought-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 /* === DASHBOARD SEARCH STYLING === */

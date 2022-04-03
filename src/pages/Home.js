@@ -89,45 +89,49 @@ function Home(props) {
             <h1>Welcome to Shower Thought Central</h1>
             <h3 className='subheading'>A place to share your shower thoughts.</h3>
             <h3 className='section-heading'>About Shower Thought Central:</h3>
-            <p className='about-text'> <strong>Shower Thought: A type of thought you might have while carrying out a routine task like showering, driving, or daydreaming.</strong> 
-            <br /> 
-            <br /> 
-            Shower Thought Central is a dedicated space for you to share your shower thoughts publicly. Next time insight strikes, remember to come over to Shower Thought Central and share your thoughts with the world. </p>
-            <div>
-                <h3 className='section-heading'>Random Shower Thought</h3>
-                { loadingRand ? (
-                    <Loading />
-                ) : (
-                    <div className='home-thought-display'>
-                        { randThought !== null ? (
-                            <Thought key={randThought._id} thought={randThought} />
-                        ) : (
-                            <div className='no-thoughts'>
-                                <h3>No thoughts found!</h3>
-                                <p>Click "Add Thought" to create a shower thought.</p>
-                            </div>
-                        )}
-                        <button className="button home-thought-btn" onClick={handleRefreshRand}>Randomize!</button>
-                    </div>
-                )}
+            <div className='flex'>
+                <p className='about-text'> <strong>Shower Thought: A type of thought you might have while carrying out a routine task like showering, driving, or daydreaming.</strong> 
+                <br /> 
+                <br /> 
+                Shower Thought Central is a dedicated space for you to share your shower thoughts publicly. Next time insight strikes, remember to come over to Shower Thought Central and share your thoughts with the world. </p>
             </div>
-            <div>
-                <h3 className='section-heading'>Latest Shower Thought</h3>
-                { loadingLate ? (
-                    <Loading />
-                ) : (
-                    <div className='home-thought-display'>
-                        { latestThought !== null ? (
-                            <Thought key={latestThought._id} thought={latestThought} />
-                        ) : (
-                            <div className='no-thoughts'>
-                                <h3>No thoughts found!</h3>
-                                <p>Click "Add Thought" to create a shower thought.</p>
-                            </div>
-                        )}
-                        <button className="button home-thought-btn" onClick={handleRefreshLatest}>Get Latest Thought!</button>
-                    </div>
-                )}
+            <div className='home-section-flex'>
+                <div>
+                    <h3 className='section-heading'>Random Shower Thought</h3>
+                    { loadingRand ? (
+                        <Loading />
+                    ) : (
+                        <div className='home-thought-display'>
+                            { randThought !== null ? (
+                                <Thought key={randThought._id} thought={randThought} />
+                            ) : (
+                                <div className='no-thoughts'>
+                                    <h3>No thoughts found!</h3>
+                                    <p>Click "Add Thought" to create a shower thought.</p>
+                                </div>
+                            )}
+                            <button className="button home-thought-btn" onClick={handleRefreshRand}>Randomize!</button>
+                        </div>
+                    )}
+                </div>
+                <div>
+                    <h3 className='section-heading'>Latest Shower Thought</h3>
+                    { loadingLate ? (
+                        <Loading />
+                    ) : (
+                        <div className='home-thought-display'>
+                            { latestThought !== null ? (
+                                <Thought key={latestThought._id} thought={latestThought} />
+                            ) : (
+                                <div className='no-thoughts'>
+                                    <h3>No thoughts found!</h3>
+                                    <p>Click "Add Thought" to create a shower thought.</p>
+                                </div>
+                            )}
+                            <button className="button home-thought-btn" onClick={handleRefreshLatest}>Get Latest Thought!</button>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
 

@@ -1,0 +1,25 @@
+@import url(../accessories.css);
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    display: relative;
+}
+
+.footer-content {
+    color: var(--font-color);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: var(--heading-font);
+}
+
+.footer-link:hover {
+    color: var(--hover-color);
+}

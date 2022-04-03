@@ -1,0 +1,65 @@
+@import url(../accessories.css);
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-alt-flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* FORM BUTTONS */
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--success);
+    border: 2px solid var(--background-color);
+    border-radius: 35px;
+    font-size: medium;
+}
+
+.form-submit:hover {
+    background-color: var(--background-color);
+    color: var(--hover-color);
+    border: 2px solid var(--success);
+}
+
+.form-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--danger);
+    border: 2px solid var(--background-color);
+    color: var(--font-color);
+    font-size: medium;
+    border-radius: 35px;
+}
+
+.form-cancel:hover {
+    background-color: var(--background-color);
+    color: var(--hover-color);
+    border: 2px solid var(--danger);
+}
+
+/* FORM INPUTS */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+.input-container input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.input-container input:hover, textarea:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+}

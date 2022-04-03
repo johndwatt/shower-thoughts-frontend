@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/shower-thoughts-frontend/static/css/main.0a19d55c.css",
-    "main.js": "/shower-thoughts-frontend/static/js/main.cc19e462.js",
+    "main.js": "/shower-thoughts-frontend/static/js/main.43750fa3.js",
     "static/media/shower-head.jpg": "/shower-thoughts-frontend/static/media/shower-head.31ca53d81d15c63e72fc.jpg",
     "index.html": "/shower-thoughts-frontend/index.html",
     "main.0a19d55c.css.map": "/shower-thoughts-frontend/static/css/main.0a19d55c.css.map",
-    "main.cc19e462.js.map": "/shower-thoughts-frontend/static/js/main.cc19e462.js.map"
+    "main.43750fa3.js.map": "/shower-thoughts-frontend/static/js/main.43750fa3.js.map"
   },
   "entrypoints": [
     "static/css/main.0a19d55c.css",
-    "static/js/main.cc19e462.js"
+    "static/js/main.43750fa3.js"
   ]
 }
